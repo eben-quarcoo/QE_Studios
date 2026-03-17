@@ -1,0 +1,32 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 40px;
+    width: 100%;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: yellow;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: end;
+    transition: background-color 0.5s;
+}
+.navbar a:hover{
+    background-color: yellow;
+    color: black;
+}
+.navbar li{
+    float: left;
+}
