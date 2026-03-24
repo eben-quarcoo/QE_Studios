@@ -1,11 +1,7 @@
-html,
-body {
-    min-height: 100%;
-}
 body{
     background-color: rgb(250, 254, 255);
     color: rgb(70, 70, 70);
-    margin: 0;
+    margin: 60px;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -14,9 +10,10 @@ body{
 }
 main {
     width: min(96%, 940px);
-    margin: 90px auto 0;
+    margin: 90px auto 24px;
     flex: 1;
 }
+
 h1, h2, h4{
     color: rgb(8, 22, 48);
 }
@@ -27,7 +24,7 @@ h1, h2, h4{
     justify-content: flex-start;
     height: 50px;
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -35,6 +32,19 @@ h1, h2, h4{
     padding: 0px 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+.card{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}   
+.card a{
+    color: #3cb2e0;
+    text-decoration: none;
+    font-weight: 400;
+}
+
 .navbar ul{
     display: flex;
     list-style-type: none;
@@ -45,7 +55,7 @@ h1, h2, h4{
     overflow: hidden;
 }
 .navbar a{
-    color: #3cb2e0;
+    color: #3a8fd3;
     text-decoration: none;
     padding: 10px 15px;
     text-align: end;
@@ -60,26 +70,10 @@ h1, h2, h4{
 .navbar li{
     float: left;
 }
-.short_Description{
-    text-align: left;
-}
-.a{
-    color: yellow;
-    background-color: black;
-    text-decoration: none;
-}
-footer{
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 15px 0;
-    margin-top: auto;
-    border-top: 1px solid rgba(0,0,0,0.08);
-    width: 100%;
-}
 
 .contact-page {
     min-height: 100vh;
-    padding-top: 80px;
+    padding-top: px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,21 +81,18 @@ footer{
 }
 
 .contact-content {
-    width: min(92%, 800px);
+    text-align: center;
+    width: min(35%, 800px);
     background: #ffffff;
     border-radius: 18px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     padding: 24px;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
+    margin: 120px auto 40px;
 }
 
-.GetinTouchform h2,
 .contact-summary h3 {
     margin-top: 0;
-    color: #1f3f71;
+    color: #233755;
 }
 
 .GetinTouchform {
@@ -111,23 +102,29 @@ footer{
 .GetinTouchform form {
     display: grid;
     gap: 12px;
+    justify-items: center;
 }
 
 .input-group {
     display: grid;
     gap: 4px;
     width: 100%;
+    justify-items: center;
 }
 
 .input-group label {
+    text-align: center;
     font-size: 0.9rem;
     font-weight: 600;
     color: #2b3a59;
+    width: 100%;
+    max-width: 400px;
 }
 
 .input-group input,
 .input-group textarea {
-    width: 100%;
+    text-align: center;
+    width: min(90%, 420px);
     border-radius: 10px;
     border: 1px solid #c8d5e8;
     padding: 10px 12px;
@@ -145,7 +142,7 @@ footer{
 }
 
 .button-row {
-    text-align: right;
+    text-align: center;
 }
 
 .button-row button {
@@ -193,4 +190,12 @@ footer{
         margin-left: 18px;
         padding-left: 18px;
     }
+}
+footer{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+    border-top: 1px solid rgba(0,0,0,0.08);
+    width: 100%;
 }
