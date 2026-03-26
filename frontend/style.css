@@ -8,18 +8,6 @@ body{
     min-height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-main {
-    width: min(96%, 940px);
-    margin: 90px auto 24px;
-    flex: 1;
-}
-
-header{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-}
 h1, h2, h4{
     color: rgb(8, 22, 48);
 }
@@ -38,19 +26,6 @@ h1, h2, h4{
     padding: 0px 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-.card{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px 0;
-}   
-.card a{
-    color: #3cb2e0;
-    text-decoration: none;
-    font-weight: 400;
-}
-
 .navbar ul{
     display: flex;
     list-style-type: none;
@@ -76,7 +51,34 @@ h1, h2, h4{
 .navbar li{
     float: left;
 }
-
+header{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 20px;
+}
+.card{
+    height: 60vh;
+    width: 80%;
+    margin-bottom: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}   
+.card a{
+    color: #3cb2e0;
+    text-decoration: none;
+    font-weight: 400;
+}
+.start-a-project{
+    text-align: center;
+    margin-bottom: 400px;
+}
+h4{
+    text-align: center;
+}
 .contact-page {
     min-height: 100vh;
     padding-top: px;
@@ -85,7 +87,6 @@ h1, h2, h4{
     justify-content: center;
     background: linear-gradient(180deg, #f9fbff 0%, #eef6ff 100%);
 }
-
 .contact-content {
     text-align: center;
     width: min(35%, 800px);
@@ -104,20 +105,17 @@ h1, h2, h4{
 .GetinTouchform {
     margin: 0;
 }
-
 .GetinTouchform form {
     display: grid;
     gap: 12px;
     justify-items: center;
 }
-
 .input-group {
     display: grid;
     gap: 4px;
     width: 100%;
     justify-items: center;
 }
-
 .input-group label {
     text-align: center;
     font-size: 0.9rem;
@@ -126,7 +124,6 @@ h1, h2, h4{
     width: 100%;
     max-width: 400px;
 }
-
 .input-group input,
 .input-group textarea {
     text-align: center;
@@ -139,18 +136,20 @@ h1, h2, h4{
     background: #fcfdff;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-
 .input-group input:focus,
 .input-group textarea:focus {
     outline: none;
     border-color: #5a94d6;
     box-shadow: 0 0 0 3px rgba(90, 148, 214, 0.15);
 }
-
 .button-row {
     text-align: center;
 }
-
+.button-row a{
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 400px;
+}
 .button-row button {
     border: none;
     border-radius: 10px;
@@ -161,29 +160,24 @@ h1, h2, h4{
     cursor: pointer;
     transition: filter 0.2s ease, transform 0.2s ease;
 }
-
 .button-row button:hover {
     filter: brightness(0.98);
     transform: translateY(-1px);
 }
-
 .contact-summary {
     border-top: 1px solid #e8eef8;
     padding-top: 10px;
     color: #233755;
     font-size: 0.95rem;
 }
-
 .contact-summary a {
     color: #3a8fd3;
     text-decoration: none;
     font-weight: 600;
 }
-
 .contact-summary a:hover {
     text-decoration: underline;
 }
-
 @media (min-width: 768px) {
     .contact-content {
         grid-template-columns: 1fr 1fr;
